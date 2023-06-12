@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Berkshire+Swash&family=Courgette&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Tangerine:wght@400;700&family=Yellowtail&display=swap');
 
 * {
   margin: 0;
@@ -256,6 +259,24 @@ nav{
   -webkit-backdrop-filter: blur(6px);
 }
 
+.header_text h1{
+  font-family: 'Courgette', cursive;
+}
+
+.header_text h5{
+  font-family: 'Handlee', cursive;
+}
+
+.header_img{
+  padding: 4rem 0 3rem 5rem;
+}
+
+.header_img img{
+  max-width: 25rem;
+  box-shadow:0 0 29px #2C003E;
+  border-radius: 1.5rem 0 1.5rem 1.5rem;
+}
+
 
 
 
@@ -282,6 +303,20 @@ nav{
   color: var(--color-brand2);
 }
 
+.about_right h1{
+  font-family: 'Courgette', cursive;
+}
+
+.about_left{
+  padding: 3rem 0 0 5rem;
+}
+
+
+.about_left img{
+  max-width: 25rem;
+  box-shadow: 0 0 29px #2c003ed2;
+  border-radius: 1.5rem 0 1.5rem 1.5rem;
+}
 
 
 
@@ -289,9 +324,8 @@ nav{
 /* ============= WHYUS =========== */
 
 #whyUs{
-  background: #9c1919;
   position: relative;
-  color: var(--color-bg);
+  color: var(--color-brand2);
 }
 
 #whyUs .title{
@@ -353,11 +387,13 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 
 
 .service{
-  background:linear-gradient(#e928285d, #110118, #0a000e);
+  background: var(--color-bg2);
+  box-shadow: 0 0 20px #512B58;
   padding: 2rem;
   text-align: left;
   border-radius: 6px;
-  border-bottom: 0.4rem solid #e92828;
+  /* border-bottom: 0.4rem solid #e92828; */
+  
 }
 
 .service .service_icon i{
@@ -367,7 +403,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 }
 
 .service_text h5{
-  color: var(--color-text2);
+  color: var(--color-brand2);
   margin: 1rem 0;
   transition: var(--transition);
   font-weight: 600;
@@ -414,45 +450,9 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 .work_container h1{
   color: var(--color-text2);
 }
-.work_container a {
-  margin-top: 2rem;
-  text-align: center;
-}
-
-.work_container a span i{
-  font-size: 1.3rem;
-  margin-left: 0.4rem;
-}
-
-.work{
-  position: relative;
-  border-radius:6px;
-  overflow: hidden;
-}
 
 .work img{
-  height: 18rem;
-}
-
-
-.work_details{
-  position: absolute;
-  bottom: -12rem;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  height: 100%;
-  background: linear-gradient(#e9282805, #e92828) ;
-  transition: all 0.8s ease;
-}
-
-.work:hover .work_details{
-  bottom: -2.5rem;
-}
-
-.work_details{
-  color: #bff4f5;
+  height: 19rem;
 }
 
 
@@ -841,7 +841,7 @@ section{
   border-bottom-left-radius: 13rem;
   border-bottom-right-radius: 13rem;
   z-index:-5;
-  
+  display: none;
 }
 
 .header_icon{
@@ -853,21 +853,14 @@ section{
   
 }
 
+.header_img {
+  padding: 5.5rem 0 0 0 ;
+}
+
 .work img{
   height: 16rem;
 }
 
-.work_details{
-  position: absolute;
-  bottom: -12rem;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  height: 100%;
-  background: linear-gradient(#e9282805, #e92828) ;
-  transition: all 0.8s ease;
-}
 
 /* ABOUT */
 
@@ -889,6 +882,10 @@ section{
   text-align: center;
   font-size: 0.8rem;
   font-weight: 300;
+}
+
+.about_left {
+  padding: 3rem 0 0 0;
 }
 
 
@@ -1007,13 +1004,7 @@ color: var(--color--text);
 }
 
 
-.highlight{
-  color: var(--color-bg1);
-  font-weight: 700;
-  background: #bff4f5;
-  padding: 0.2rem 0.4rem 0.2rem 0.4rem;
-  margin-top: 0.5rem;
-}
+
 
 .title{
   font-size: 3rem;
@@ -1044,10 +1035,10 @@ section{
   content: "";
   position: absolute;
   width: 20%;
-  height: 12rem;
+  height: 9rem;
   background:var(--color-text2);
   left: -1rem;
-  top: 10rem;
+  top: 7rem;
   transform: rotate(5deg);
   border-top-right-radius: 4rem;
   border-bottom-right-radius: 4rem;
@@ -1057,7 +1048,7 @@ section{
 #header::before{
   content: "";
   position: absolute;
-  height: 40rem;
+  height: 20rem;
   width: 32%;
   background: var(--color-text2);
   top: -8rem;
@@ -1066,6 +1057,7 @@ section{
   border-bottom-left-radius: 13rem;
   border-bottom-right-radius: 13rem;
   z-index:-5;
+  display: none;
   
 }
 
@@ -1082,6 +1074,10 @@ section{
   font-size: 1rem;
 }
 
+.header_img{
+  padding: 0;
+}
+
 
 .about{
   display: none;
@@ -1090,6 +1086,10 @@ section{
 .about_mobile{
   display: block;
   position: relative;
+}
+
+.about_left{
+  padding: 0;
 }
 
 #whyUs h5{
@@ -1106,17 +1106,7 @@ section{
 .work img{
   height: 17rem;
 }
-.work_details{
-  position: absolute;
-  bottom: -8.5rem;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  height: 60%;
-  background: linear-gradient(#e9282805, #e92828) ;
-  transition: all 0.8s ease;
-}
+
 
 .contact_left{
   width: 100%;
