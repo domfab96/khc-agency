@@ -329,8 +329,8 @@ nav{
 }
 
 #whyUs .title{
-  left: -9.5rem;
-  top: 17rem;
+  left: -13rem;
+  top: 24rem;
   z-index: 2;
 }
 
@@ -528,12 +528,24 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 }
 
 .contact_left{
-  background-image: url(/sdimg/bg1.png);
   width: 100%;
   height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
+}
 
+video{
+  width: 20rem;
+  padding: 0;
+  margin: 0;
+  line-height: normal;
+  background-position: center;
+  background-size: cover;
+}
+
+.video-control{
+  position: absolute;
+  left: 50%;
+  top: 50%;
 }
 
 .contact_vid{
@@ -548,6 +560,9 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 .contact_vid i{
   font-size: 4rem;
   color: var(--color-text2);
+  /* position: absolute;
+  left: 50%;
+  top:50%; */
 }
 
 .contact_right{
@@ -1113,6 +1128,10 @@ section{
   height: 18rem;
 }
 
+video{
+  height: 16rem;
+  width: 12rem;
+}
 .contact_sub-container h1{
   font-size: 1rem;
 }
