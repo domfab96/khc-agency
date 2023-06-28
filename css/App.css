@@ -1110,6 +1110,9 @@ section{
 #whyUs h5{
   font-size: 0.9rem;
 }
+#whyUs .title{
+  left :-10rem;
+}
 
 .whyUs_right{
   margin-top: 1.5rem;
