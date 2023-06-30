@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Berkshire+Swash&family=Courgette&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Tangerine:wght@400;700&family=Yellowtail&display=swap');
 
 * {
@@ -18,13 +18,14 @@
 
 :root{
   --color-text:#eeee;
-  --color-text2:#e92828;
+  --color-text2:#5B8FB9;
   --color-bg1:#2C003E;
   --color-bg:#110118;
   --color-bg2:#0a000e;
   --color-bg3:#eeee;
-  --color-brand1:#512B58;
-  --color-brand2:#D2FAFB;
+  --color-brand1:#5B8FB9;
+  --color-brand2:#B6EADA;
+
   
   --transition: all 0.5s ease;
 
@@ -88,7 +89,7 @@ small{
   margin-bottom: 2rem;
 }
 .btn{
-  color: var(--color--text);
+  color: var(--color-bg2);
   background: var(--color-text2);
   display: inline-block;
   padding: 1rem 2rem;
@@ -105,11 +106,11 @@ small{
 
 .btn-primary{
   background: var(--color-text2);
-  color: var(--color--text);
+  color: var(--color-bg2);
 }
 .btn-secondary{
 background: var(--color-brand1);
-color: var(--color--text);
+color: var(--color-bg);
 }
 
 
@@ -260,7 +261,7 @@ nav{
 }
 
 .header_text h1{
-  font-family: 'Courgette', cursive;
+font-family: 'Noto Sans', sans-serif;
 }
 
 .header_text h5{
@@ -273,7 +274,7 @@ nav{
 
 .header_img img{
   max-width: 25rem;
-  box-shadow:0 0 29px #2C003E;
+  box-shadow:0 0 16px #B6EADA;
   border-radius: 1.5rem 0 1.5rem 1.5rem;
 }
 
@@ -301,10 +302,11 @@ nav{
 
 .about_right p{
   color: var(--color-brand2);
+  margin-bottom: 0.2rem;
 }
 
 .about_right h1{
-  font-family: 'Courgette', cursive;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .about_left{
@@ -314,7 +316,7 @@ nav{
 
 .about_left img{
   max-width: 25rem;
-  box-shadow: 0 0 29px #2c003ed2;
+  box-shadow: 0 0 16px #B6EADA;
   border-radius: 1.5rem 0 1.5rem 1.5rem;
 }
 
@@ -388,7 +390,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 
 .service{
   background: var(--color-bg2);
-  box-shadow: 0 0 20px #512B58;
+  box-shadow: 0 0 10px #B6EADA;
   padding: 2rem;
   text-align: left;
   border-radius: 6px;
@@ -481,7 +483,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
   border-radius: 1rem;
   position: relative;
   background: var(--color-bg2);
-  box-shadow: 0 0 20px #512B58;
+  box-shadow: 0 0 10px #5B8FB9;
 }
 
 .review_container{
@@ -552,7 +554,7 @@ video{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #2c003ee5;
+  background:var(--color-text2);
   width: 100%;
   height: 100%;
 }
@@ -567,7 +569,7 @@ video{
 
 .contact_right{
   padding-right: 20%;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='500' height='300' preserveAspectRatio='none' viewBox='0 0 500 300'%3e%3cg clip-path='url(%26quot%3b%23SvgjsClipPath1022%26quot%3b)' fill='none'%3e%3crect width='500' height='300' x='0' y='0' fill='rgba(233%2c 40%2c 40%2c 0.79)'%3e%3c/rect%3e%3ccircle r='50' cx='-43.09' cy='10.41' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='50' cx='155.11' cy='216.72' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='96.215' cx='198.62' cy='193.61' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='96.25' cx='453.33' cy='177.78' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='65.66' cx='404.37' cy='28.05' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='38.66' cx='200.38' cy='69.41' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='69.205' cx='93.56' cy='86.73' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='75.31' cx='368.77' cy='78.29' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='42.905' cx='253.95' cy='270.62' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='34.7' cx='384.38' cy='223.92' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='73.77' cx='81.93' cy='249.28' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='87.275' cx='25.02' cy='221.65' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='71.235' cx='215.51' cy='33.78' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='48.88' cx='90.37' cy='31.82' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='25.91' cx='278.95' cy='66.79' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='55.355' cx='424.43' cy='248.65' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='43.87' cx='18.5' cy='77.04' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='39.91' cx='475.39' cy='296.61' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='26.285' cx='438.06' cy='38.74' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='94.285' cx='276.37' cy='12.84' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='44.69' cx='72.74' cy='19.43' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3c/g%3e%3cdefs%3e%3cclipPath id='SvgjsClipPath1022'%3e%3crect width='500' height='300' x='0' y='0'%3e%3c/rect%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+  background-image: url(/backgrounds/bg4.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -594,7 +596,7 @@ video{
 
 #contact_sub{
   position: relative;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='900' height='300' preserveAspectRatio='none' viewBox='0 0 900 300'%3e%3cg clip-path='url(%26quot%3b%23SvgjsClipPath1026%26quot%3b)' fill='none'%3e%3crect width='900' height='300' x='0' y='0' fill='rgba(233%2c 40%2c 40%2c 0.79)'%3e%3c/rect%3e%3ccircle r='50' cx='-35.16' cy='-42.68' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='50' cx='215.79' cy='159.75' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='50' cx='433.64' cy='378.08' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='50' cx='550.75' cy='588.7' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='68.21' cx='578.11' cy='172.06' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='39.22' cx='531.44' cy='255.36' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='43.045' cx='346.82' cy='247.21' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='73.49' cx='289.18' cy='192.63' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='60.415' cx='233.14' cy='69.86' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='49.345' cx='550.47' cy='32.93' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='61.365' cx='588.65' cy='172.06' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='95.3' cx='868.47' cy='133.66' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='92.625' cx='544.83' cy='20.42' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='32.735' cx='605.7' cy='22.45' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='81.545' cx='3.85' cy='44.88' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='75.35' cx='304.47' cy='36.95' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='41.95' cx='121.94' cy='253.94' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='67.18' cx='601.09' cy='9.38' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='29.525' cx='144.15' cy='107.68' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='73.555' cx='855.35' cy='27.49' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3ccircle r='72.825' cx='61.36' cy='281.84' stroke='%235c0000' stroke-opacity='0.67' stroke-width='2'%3e%3c/circle%3e%3c/g%3e%3cdefs%3e%3cclipPath id='SvgjsClipPath1026'%3e%3crect width='900' height='300' x='0' y='0'%3e%3c/rect%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+  background-image: url(/backgrounds/bg4.png);
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
@@ -765,10 +767,10 @@ footer{
 
 small{
   letter-spacing: 1px;
-  margin-bottom: 2rem;
+  margin-bottom: 0.3rem;
 }
 .btn{
-  color: var(--color--text);
+  color: var(--color-bg2);
   background: var(--color-text2);
   display: inline-block;
   padding: 0.7rem 1.4rem;
@@ -786,7 +788,7 @@ small{
 
 .btn-primary{
   background: var(--color-text2);
-  color: var(--color--text);
+  color: var(--color-bg2);
 }
 .btn-secondary{
 background: var(--color-brand1);
@@ -985,21 +987,22 @@ section{
 
 small{
   letter-spacing: 1px;
-  margin-bottom: 2rem;
+  margin-bottom: 0.2rem;
   font-size: 0.7rem;
+  font-weight: 300;
 }
 a{
-  font-size: 0.5rem;
+  font-size: 0.7rem;
 }
 .btn{
-  color: var(--color--text);
+  color: var(--color-bg2);
   background: var(--color-text2);
   display: inline-block;
   padding: 0.4rem 0.8rem;
   border: 1px solid transparent;
-  font-weight: 500;
+  font-weight: 300;
   transition: var(--transition);
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   
 }
 
@@ -1011,7 +1014,7 @@ a{
 
 .btn-primary{
   background: var(--color-text2);
-  color: var(--color--text);
+  color: var(--color-bg2);
 }
 .btn-secondary{
 background: var(--color-brand1);
@@ -1078,10 +1081,11 @@ section{
 
 .header_container{
   padding-top: 2rem;
+  
 }
 
 .header_text{
-  padding: 2.5rem 2.5rem 2.5rem 0.5rem;
+  padding: 2.5rem 0.5rem 2.5rem 0.5rem;
 }
 
 .header_text h5{
